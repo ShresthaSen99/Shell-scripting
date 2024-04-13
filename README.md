@@ -14,5 +14,5 @@ scp -i ./<private-key> ./<text-file> ec2-user@<public-DNS-name>:<folder-of-ec2>
 Uploading completed.
 
 Creating shell-script.
-Create a shell-script file in EC2. You can use my shell-script to automating file management on EC2. It identifies files less than 20kb and move it to archive folder. It also creates a archive folder incase it doesn't exist.
+Create a shell-script file in EC2. You can use my shell-script to automating file management on EC2. It identifies files less than 20kb, zip the file and move it to archive folder. It also creates a archive folder incase it doesn't exist.
 Once creation is done, you can give it a run to check if it is working fine.
