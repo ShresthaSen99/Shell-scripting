@@ -1,5 +1,5 @@
 # Shell-scripting
-A shell-script to automate file management in linux system. Which has a feature of identifying files below 20kb and move it to archive folder. But before that it checks either the archive folder is created or not. In case of not, it creates first.
+A shell-script to automate file management in linux system. Which has a feature of identifying files below 20kb, zip the file and move it to archive folder. But before that it checks either the archive folder is created or not. In case of not, it creates first.
 
 Connecting to EC2 instance with SSH.
 We have to create a key pair by which we can connect to our instance remotely.
