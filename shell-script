@@ -1,0 +1,26 @@
+#!/bin/bash
+
+base=/home/ec2-user/storagefolder
+
+echo "We are in this path: $base"
+
+if [ ! -d $base ]
+then
+        echo "No such directory as $base"
+fi
+
+if [ ! -d $base/archive ]
+then
+        mkdir $base/archive
+        echo "A new Directory is created as $base/archive"
+fi
+
+for i in $( find $base -type f -size -20c )
+do
+        echo "A file found where size is below 20bytes: $i"
+        gzip $i
+        echo "Zip is done...."
+        mv $i.gz $base/archive
+        echo "The zip file is moved to $base/archive path..."
+
+done
