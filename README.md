@@ -3,6 +3,7 @@ A shell-script to automate file management in linux system. Which has a feature 
 
 Connecting to EC2 instance with SSH.
 We have to create a key pair by which we can connect to our instance remotely.
+
 To connect with ssh follow below command.
 ssh -i ./<private-key> ec2-user@<public-ip>
 Once connection established, create a directory under EC2 instance. Create a demo file in your local to upload in EC2.
